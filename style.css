@@ -31,6 +31,10 @@ button {
   font-size: 16px;
   line-height: 125%;
 }
+button:hover {
+  background-color: #cbb7fa;
+  color: #8b5cf6;
+}
 
 #form-habits {
   display: flex;
@@ -40,27 +44,35 @@ button {
 }
 .habits {
   flex-direction: column;
-  width: 40px;
+  width: fit-content;
   height: 504px;
   padding: 0px;
   align-items: flex-start;
   gap: 24px;
-  margin-top: 65px;
+  margin-top: 110px;
 }
 .habit {
   display: flex;
+  justify-content: center;
   margin-bottom: 24px;
   align-items: center;
   text-align: center;
   line-height: 64px;
-  font-size: 32px;
-  width: 40px;
+  font-size: 18px;
+  width: fit-content;
   height: 64px;
+  font-family: "Open Sans", sans-serif;
+  border: #18181b solid 2px;
+  border-radius: 8px;
+  width: 160px;
+  height: 64px;
+  background-color: #18181b;
 }
 .days {
   display: flex;
   gap: 48px;
-  margin-left: 32px;
+  margin-left: 37px;
+  margin-top: 45px;
 }
 .day {
   align-items: center;
