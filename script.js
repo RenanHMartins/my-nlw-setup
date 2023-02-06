@@ -5,17 +5,26 @@ const button = document.querySelector("header button")
 button.addEventListener("click", add)
 form.addEventListener("change", save)
 
+let tpopup = document.getElementById("tpopup")
+let fpopup = document.getElementById("fpopup")
+
 function add() {
   const today = new Date().toLocaleDateString("pt-br").slice(0, -5)
   const dayExists = nlwSetup.dayExists(today)
 
   if (dayExists) {
-    alert("Dia ja incluso")
+    fpopup.classList.add("open-fpopup")
+    setTimeout(closePopup, 5000)
     return
   }
 
-  alert("Adicionado com sucesso")
+  tpopup.classList.add("open-tpopup")
+  setTimeout(closePopup, 5000)
   nlwSetup.addDay(today)
+}
+function closePopup() {
+  fpopup.classList.remove("open-fpopup")
+  tpopup.classList.remove("open-tpopup")
 }
 function save() {
   localStorage.setItem("NLWSetup@habits", JSON.stringify(nlwSetup.data))

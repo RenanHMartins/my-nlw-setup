@@ -36,6 +36,50 @@ button:hover {
   background-color: #cbb7fa;
   color: #8b5cf6;
 }
+.tpopup {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0px;
+  align-items: center;
+  height: 15px;
+  width: 50px;
+  right: 715px;
+  bottom: 20%;
+  visibility: hidden;
+  background-color: #510f20;
+  text-align: center;
+  transition: height 0.3s, width 0.3s, font-size 0.29s;
+}
+.open-tpopup {
+  font-size: 14px;
+  visibility: visible;
+  height: 50px;
+  width: 250px;
+}
+.fpopup {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0px;
+  align-items: center;
+  height: 15px;
+  width: 50px;
+  right: 715px;
+  bottom: 20%;
+  visibility: hidden;
+  background-color: #510f20;
+  text-align: center;
+  transition: height 0.3s, width 0.3s, font-size 0.29s;
+}
+.open-fpopup {
+  font-size: 14px;
+  visibility: visible;
+  height: 50px;
+  width: 250px;
+}
 
 #form-habits {
   display: flex;
