@@ -21,8 +21,7 @@ header {
 button {
   display: flex;
   padding: 16px 24px;
-  background-color: transparent;
-  border: 1px solid #8b5cf6;
+  background-color: #4d0ce7;
   align-items: center;
   color: rgb(255, 255, 255);
   gap: 12px;
@@ -30,6 +29,8 @@ button {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
+  border-radius: 7px;
+  transition: background-color 0.3s, color 0.3s;
 }
 button:hover {
   background-color: #cbb7fa;
@@ -100,6 +101,11 @@ input {
   height: 64px;
   background: #18181b;
   border-radius: 8px;
+  transition: background-color 0.5s, transform 1s, width 0.6s, height 0.6s;
+}
+input:hover {
+  background-color: #363637;
+  transform: scale(1.25);
 }
 input:checked {
   background: #8b5cf6;
